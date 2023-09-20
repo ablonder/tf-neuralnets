@@ -51,7 +51,7 @@ def winequality(lrate, e, validp, testp, hidlayers = [10], vint=10):
 def letterrecog(lrate, e, validp, testp, hidlayers = [10], vint=10):
     """ Produces a graph of the error of a neural network trained to categorize letters based on various features """
 
-    # load the wine quality data set
+    # load the letter recognition data set
     letters = np.loadtxt("letter-recognition.csv", delimiter = ",", converters={0: lambda x: ord(x)-ord('A')})
     # split it into attributes and labels - firgure out how to make each of these a list
     ldata = []
